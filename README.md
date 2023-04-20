@@ -21,3 +21,14 @@ You can decide your own pricing scale, but each selection must update the cart i
 
 ### Stretch
 - Add to cart button (on click add to cart and reset dropdown/radio buttons)
+
+
+### build and run the app
+build the image   
+```
+docker build -t pizza-app .
+```
+run the app 
+```
+docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules pizza-app
+```
